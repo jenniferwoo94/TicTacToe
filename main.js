@@ -72,6 +72,7 @@ function render() {
     // Declare winner if found
     if (winner === 1) {
         winnerEl.textContent = "Black X Wins!";
+        winnerEl.style.color = "black";
     } else if (winner === -1) {
         winnerEl.textContent = "Pink O Wins!";
     } else if (winner === "tie") {
@@ -101,7 +102,6 @@ function whoWon() {
         if ( Math.abs( board[winningCombos[i][0]] + board[winningCombos[i][1]] + board[winningCombos[i][2]] ) === 3)
           return board[winningCombos[i][0]];
     }
-
     // Check if any null spaces; winner has not been found yet
     if (board.includes(null)) return null;
     // No more spaces and no winner; tie game
