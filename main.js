@@ -5,6 +5,11 @@ const lookup = {
     null: "",
 };
 
+const color = {
+    "1": "black",
+    "-1": "pink",
+}
+
 const winningCombos = [
     [0, 1, 2],
     [3, 4, 5],
@@ -56,8 +61,14 @@ function render() {
     // sq represents the value (each one of the null values in board variable)
     // idx represents the index value (both the board variable and the squareEls variable)
         squareEls[idx].innerHTML = lookup[sq];
+        squareEls[idx].style.color = color[sq];
     });
     playerEl.textContent = lookup[turn];
+    if (turn === 1) {
+        playerEl.style.color = "black";
+    } else {
+        playerEl.style.color = "pink";
+    }
 };
 
 function handleMove(evt) {

@@ -48,5 +48,8 @@ button {
     background-color: black;
     color: #f4a7bb;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 10px;
 }
