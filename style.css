@@ -1,3 +1,10 @@
+html, body {
+    height: 100vh;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #f4a7bb;
+}
+
 h1 {
     font-size: 50px;
 }
@@ -8,8 +15,6 @@ h2 {
 
 h1, h2 {
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #f4a7bb;
 }
 
 table {
@@ -24,7 +29,6 @@ td {
     width: 100px;
     text-align: center;
     vertical-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 50px;
 }
 
@@ -47,9 +51,14 @@ table tr td:last-child {
 button {
     background-color: black;
     color: #f4a7bb;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: 30px;
     padding: 10px;
     border-radius: 5px;
-    font-size: 10px;
+    font-size: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+#restartButton {
+    text-align: center;
 }
