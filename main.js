@@ -57,7 +57,7 @@ function render() {
     // idx represents the index value (both the board variable and the squareEls variable)
         squareEls[idx].innerHTML = lookup[sq];
     });
-
+    playerEl.textContent = lookup[turn];
 };
 
 function handleMove(evt) {
