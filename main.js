@@ -5,7 +5,7 @@ const lookup = {
     null: "",
 };
 
-const color = {
+const playerColor = {
     "1": "black",
     "-1": "pink",
 }
@@ -61,14 +61,10 @@ function render() {
     // sq represents the value (each one of the null values in board variable)
     // idx represents the index value (both the board variable and the squareEls variable)
         squareEls[idx].innerHTML = lookup[sq];
-        squareEls[idx].style.color = color[sq];
+        squareEls[idx].style.color = playerColor[sq];
     });
     playerEl.textContent = lookup[turn];
-    if (turn === 1) {
-        playerEl.style.color = "black";
-    } else {
-        playerEl.style.color = "pink";
-    }
+    if (turn) playerEl.style.color = playerColor[turn];
 };
 
 function handleMove(evt) {
